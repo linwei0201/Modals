@@ -1,0 +1,150 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.ui-alert,
+.ui-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+  .ui-alert .close,
+  .ui-modal .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    color: #999;
+    font-size: 20px;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  .ui-alert .close:hover,
+  .ui-modal .close:hover{
+    color: #666;
+  }
+
+  .ui-alert .hd,
+  .ui-modal .hd{
+    margin-top: 16px;
+    padding: 0 32px;
+    font-size: 22px;
+    color: #394043;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .ui-alert .bd,
+  .ui-modal .bd{
+    max-height: 500px;
+    margin-bottom: 30px;
+    overflow-y: auto;
+    color: #9c9fa1;
+    padding: 0 32px;
+  }
+
+  .ui-alert .ft,
+  .ui-modal .ft{
+    padding: 0 32px 30px;
+    text-align: left;
+  }
+
+  .ui-alert .ft:empty,
+  .ui-modal .ft:empty{
+    display: none;
+  }
+    .ui-alert .ft span,
+    .ui-modal .ft span{
+      line-height: 1;
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid  #eee;
+      border-radius: 2px;
+      padding: 12px 30px;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .ui-alert .ft span:hover,
+    .ui-modal .ft span:hover{
+      background: #f8f8f9;
+    }
+
+.ui-toast {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+  .ui-toast .box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(40, 40, 40, .75);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 100px;
+    max-width: 200px;
+  }
+
+  .ui-toast .icon-loading{
+    position: relative;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto 10px;
+  }
+
+  .timer-modal .bd p .timer{
+    color: #00ae66;
+  }
+
+  .timer-modal .bd a{
+    cursor: pointer;
+    line-height: 1;
+    display: inline-block;
+    border: 1px solid  #eee;
+    border-radius: 2px;
+    padding: 12px 30px;
+    margin: 30px 10px 30px auto;
+    font-size: 14px;
+    color: #394043;
+  }
+
+  .timer-modal .bd a:hover{
+    background: #f8f8f9;
+  }
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
