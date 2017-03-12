@@ -12,7 +12,16 @@ html, body{
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
+  .ui-modal .box,
+  .ui-alert .box{
+    position: relative;
+    width: 458px;
+    margin: 150px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px -5px 13px 0 rgba(0, 0, 0, 0.2),
+                -5px 5px 13px 0 rgba(0, 0, 0, 0.2);
+  }
   .ui-alert .close,
   .ui-modal .close{
     position: absolute;
